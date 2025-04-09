@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
 export class TaskListComponent {
 
   tasks: string[] = [];
+  newtask: string ='';
 
-  constructor() {
+  constructor(private task:tasks) {
     console.log('TaskListComponent initialized');
   }
 
